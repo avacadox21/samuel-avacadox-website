@@ -222,3 +222,43 @@ a:hover {
     font-size: 3rem;
 
 } 
+#slide4 h1 a i{
+    font-size: 3rem;
+
+} 
+
+
+
+
+
+#slide4{
+    background-color: white;
+    margin: 30px;
+    width: 900px;
+    padding: 30px;
+    padding-top: 2.5px;
+    height: 100px;
+    display: flex;
+    box-shadow: 23px 9px 35px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 23px 9px 35px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 23px 9px 35px 0px rgba(0,0,0,0.75);
+    animation-delay: 3.5s;
+}
+
+#slide4 i {
+ font-size: 100px;
+
+
+}
+
+#slide4 h1 a {
+    font-size: 3rem;
+    color: black;
+    position: relative;
+    left: 60px;
+    top: 20px;
+}
+
+#slide4 h1 a:hover {
+    background: none;
+}
