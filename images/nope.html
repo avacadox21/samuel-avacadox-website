@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NOPE</title>
+    <link rel="stylesheet" href="nope.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+</head>
+<body>
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+          <i class="fas fa-bars"></i>
+        </label>
+        <label class="logo">Avacadox21</label>
+        <ul>
+          <li><a class="active" href="../index.html">Home</a></li>
+           <li><a href="../projects.html">Projects</a></li>
+          <li><a href="../contact.html">Contact</a></li>
+          <li><a href="../feedback.html">Feedback</a></li>
+        </ul>
+      </nav>
+
+      <div class='a'><img src="https://media.tenor.com/images/323393ed1e06a5850cdc5fd66684f59d/tenor.gif" height="300" width="400"></div>
+      <div class='b'><img src="./chintu.png" alt=""></div>
+      <div class='c'><img src="https://media.tenor.com/images/323393ed1e06a5850cdc5fd66684f59d/tenor.gif" height="300" width="400"></div>
+      <div class='d'><img src="./chintu.png" alt=""></div>
+      <center>
+      <div class="content-wrapper">
+          <h1><i class="fa fa-exclamation-circle" aria-hidden="true"></i>
+            Do you think I can even make such projects, <b>Now Go Play with your PP</b></h1>
+      </div></center>
+      <script>
+          $(document).ready(function(){
+    animateDiv('.a');
+    animateDiv('.b');
+    animateDiv('.c');
+    animateDiv('.d');
+     
+});
+
+function makeNewPosition(){
+    
+    // Get viewport dimensions (remove the dimension of the div)
+    var h = $(window).height() - 50;
+    var w = $(window).width() - 50;
+    
+    var nh = Math.floor(Math.random() * h);
+    var nw = Math.floor(Math.random() * w);
+    
+    return [nh,nw];    
+    
+}
+
+function animateDiv(myclass){
+    var newq = makeNewPosition();
+    $(myclass).animate({ top: newq[0], left: newq[1] }, 1000,   function(){
+      animateDiv(myclass);        
+    });
+    
+};
+      </script>
+</body>
+</html>
