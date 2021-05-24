@@ -210,27 +210,6 @@ a:hover {
     background: none;
 }
 
-#slide1 h1 a i{
-    font-size: 3rem;
-
-} 
-#slide2 h1 a i{
-    font-size: 3rem;
-
-} 
-#slide3 h1 a i{
-    font-size: 3rem;
-
-} 
-#slide4 h1 a i{
-    font-size: 3rem;
-
-} 
-
-
-
-
-
 #slide4{
     background-color: white;
     margin: 30px;
@@ -262,3 +241,25 @@ a:hover {
 #slide4 h1 a:hover {
     background: none;
 }
+
+#slide1 h1 a i{
+    font-size: 3rem;
+
+} 
+#slide2 h1 a i{
+    font-size: 3rem;
+
+} 
+#slide3 h1 a i{
+    font-size: 3rem;
+
+} 
+#slide4 h1 a i{
+    font-size: 3rem;
+
+} 
+
+
+
+
+
